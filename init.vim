@@ -1,4 +1,5 @@
 ":::instalacion de plugins:::
+"alksjflkasjflk
 
 call plug#begin('~/AppData/Local/nvim/plugged') 	"directorio donde se van a instalar los plugins
 
