@@ -1,0 +1,98 @@
+{
+	"include": {
+		"prefix": "include",
+		"body": [
+			"#include <${1:/* library */}>"
+		],
+		"description": "cout structure"
+	},
+	"simple structure": {
+		"prefix": ["simple", "structure"],
+		"body": [
+			"typedef struct{",
+			"\t${1:/*member*/}; ",
+			"} ${2:structure_variable_name};"
+		],
+		"description": "simple structure syntax"
+	},
+	"named structure": {
+		"prefix": ["named", "structure"],
+		"body": [
+			"typedef struct ${1:struct_name}{",
+			"\t${2:/*member*/}; ",
+			"};"
+		],
+		"description": "named structure syntax"
+	},
+	"ptr": {
+		"prefix": "ptr",
+		"body": [
+			"->"
+		],
+		"description": "arrow"
+	},
+	"cout": {
+		"prefix": "cout",
+		"body": [
+			"cout << \"${1:/* message */}\" << endl;"
+		],
+		"description": "cout structure"
+	},
+	"cin": {
+		"prefix": "cin",
+		"body": [
+			"cin >> ${1:/*var*/};"
+		],
+		"description": "cin structure"
+	},
+	"out operator": {
+		"prefix": ["out", "operator"],
+		"body": [
+			"<<"
+		],
+		"description": "out operator"
+	},
+	"in operator": {
+		"prefix": ["in", "operator"],
+		"body": [
+			">>"
+		],
+		"description": "in operator"
+	},
+	"switch case": {
+		"prefix": "switch",
+		"body": [
+			"switch (${1:/*expression*/}) {",
+			"\tcase x:",
+			"\t\t/*code*/",
+			"\t\tbreak;",
+			"\tdefault:",
+			"\t\t/*code*/",
+			"}"
+		],
+		"description": "switch case"
+	},
+	"basic structure": {
+		"prefix": "basic",
+		"body": [
+			"#include <iostream>",
+			"",
+			"using namespace std;",
+			"",
+			"int main() {",
+			"\t${1:/*code*/}",
+			"\treturn 0;",
+			"}"
+		],
+		"description": "cpp basic structure"
+	},
+	"multi-line comment": {
+		"prefix": ["multi", "comment"],
+		"body": [
+			"/*",
+			"\t${1:}",
+			"*/"
+		],
+		"description": "cin structure"
+	}
+}
