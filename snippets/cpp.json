@@ -4,7 +4,7 @@
 		"body": [
 			"#include <${1:/* library */}>"
 		],
-		"description": "cout structure"
+		"description": "include structure"
 	},
 	"simple structure": {
 		"prefix": ["simple", "structure"],
@@ -79,7 +79,7 @@
 			"",
 			"using namespace std;",
 			"",
-			"int main() {",
+			"int main(int argc, char* argv[]) {",
 			"\t${1:/*code*/}",
 			"\treturn 0;",
 			"}"
@@ -94,5 +94,27 @@
 			"*/"
 		],
 		"description": "cin structure"
+	},
+	"this": {
+		"prefix": "this",
+		"body": [
+			"this->"
+		],
+		"description": "this operator"
+	},
+	"vector": {
+		"prefix": "vector",
+		"body": [
+			"vector<>"
+		],
+		"description": "vector extension"
+	},
+	"input variable": {
+		"prefix": ["input", "variable"],
+		"body": [
+			"cout << \"Ingrese el dato: \";",
+			"cin >> ${1:/*var*/};"
+		],
+		"description": "input a variable structure"
 	}
 }
