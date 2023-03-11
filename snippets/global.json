@@ -1,0 +1,16 @@
+{
+	minus operator {
+		prefix [minus, operator],
+		body [
+			
+		],
+		description minus operator
+	},
+	mayus operator {
+		prefix [mayus, operator],
+		body [
+			
+		],
+		description mayus operator
+	}
+}
